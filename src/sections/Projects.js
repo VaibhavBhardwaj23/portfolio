@@ -1,18 +1,18 @@
 import React from "react";
 import "./sections.css";
-import projects_kid from "../assets/success-kid.svg";
 import List from "../components/List";
-
+import Header from "../components/Header";
+import projects_kid from "../assets/success-kid.svg";
+import { ProjectsData } from "../ProjectsData";
 export const Projects = () => {
+  console.log(ProjectsData);
   return (
     <div className="projects">
-      <div className="header_projects">
-        <h1>What i made</h1>
-        <div className="image_boy">
-          <img src={projects_kid} alt="projects_kid" />
-        </div>
-      </div>
-      <List />
+      <Header title="What I Made" src={projects_kid} />
+      {ProjectsData &&
+        ProjectsData.map((project) => (
+          <List key={project.title} project={project} />
+        ))}
     </div>
   );
 };

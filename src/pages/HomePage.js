@@ -3,6 +3,8 @@ import computer_guy from "../assets/computer-guy-meme.svg";
 import pfp from "../assets/PhotoFunia-1690095516.jpg";
 import { Link } from "react-router-dom";
 import { Projects } from "../sections/Projects";
+import Knowlege from "../sections/Knowlege";
+import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <div className="home">
@@ -35,6 +37,10 @@ const HomePage = () => {
         </div>
       </div>
       <Projects />
+      <Knowlege />
+      <h3 className="foot">Let's connect and create something beautiful </h3>
+      <hr></hr>
+      <Footer />
     </div>
   );
 };

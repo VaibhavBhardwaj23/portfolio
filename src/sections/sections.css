@@ -1,18 +1,20 @@
-.header_projects {
+.skills {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-.header_projects h1 {
-  flex: 1;
+  width: 70%;
+  padding: 1em;
+  margin: 0 auto;
+  outline: 1px solid black;
   font-family: "Canopee";
-  font-size: 18.301610541727673vw;
-  background-color: #1d1d1b;
-  color: white;
+  justify-content: space-evenly;
 }
-.image_boy {
-  margin: 0 0.6em;
-  height: 16.961932650073205vw;
-  width: 16.961932650073205vw;
-  outline: 2px solid black;
+
+.drake img {
+  height: 20vw;
+}
+.skills_descript h3 {
+  font-size: 1.6vw;
+}
+.skills_descript p {
+  font-size: 3vw;
 }

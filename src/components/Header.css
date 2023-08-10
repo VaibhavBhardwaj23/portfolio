@@ -1,0 +1,23 @@
+.header_projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+.header_title {
+  background-color: #1d1d1b;
+  padding: 0 0.7em;
+  flex: 1;
+  text-align: center;
+}
+.header_projects h1 {
+  font-family: "Canopee";
+  font-size: 16vw;
+  color: white;
+}
+.image_boy {
+  margin: 0 0.6em;
+  height: 16.961932650073205vw;
+  width: 16.961932650073205vw;
+  outline: 2px solid black;
+}

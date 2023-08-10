@@ -1,0 +1,13 @@
+.links a {
+  font-family: "UnifrakturCook", cursive;
+  color: black;
+  font-size: 3vw;
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  padding: 3em;
+  justify-content: space-between;
+}

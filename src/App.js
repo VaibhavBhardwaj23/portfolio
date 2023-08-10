@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 function App() {
   const main = useRef();
+
   useEffect(() => {
     gsap.to(main.current, {
       duration: 2,
@@ -12,6 +13,7 @@ function App() {
       scale: 1,
       margin: 0,
     });
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <Router>

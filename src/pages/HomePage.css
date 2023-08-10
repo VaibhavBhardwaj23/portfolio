@@ -92,3 +92,13 @@
 .btn.abt_me:hover::before {
   top: 0;
 }
+.foot {
+  font-family: "Canopee";
+  font-size: 5vw;
+  margin: 1em 0 0;
+  text-align: center;
+}
+hr {
+  margin: 3em;
+  border: 1px solid #75726c;
+}

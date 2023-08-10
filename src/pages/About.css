@@ -1,0 +1,17 @@
+.abt_div {
+  padding: 1em;
+  background-color: #cdc6be;
+  height: 100%;
+}
+.h {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 10vw;
+}
+.detail p {
+  margin: 0;
+  width: 90%;
+  font-size: 5vw;
+  padding: 0.2em;
+  font-family: "Canopee";
+  text-align: start;
+}
