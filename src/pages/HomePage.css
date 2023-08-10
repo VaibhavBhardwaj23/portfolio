@@ -1,0 +1,94 @@
+.title {
+  background-color: #1d1d1b;
+  padding: 0.2em;
+}
+.title h1 {
+  font-family: "Canopee";
+  color: #cdc6be;
+  font-size: 16vw;
+  text-align: center;
+}
+.hero-section {
+  display: flex;
+}
+.description,
+.profile {
+  width: 100%;
+}
+.description {
+  text-align: center;
+  padding: 3em 1em;
+  border-right: 1px solid #75726c;
+}
+.profile {
+  border-left: 1px solid #75726c;
+  text-align: center;
+  padding: 3em 1em;
+}
+.description h3 {
+  font-family: "Canopee";
+  font-size: 10vw;
+  color: black;
+  font-weight: 100;
+}
+.image {
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  padding: 1em;
+}
+.description p {
+  font-size: 5vw;
+  font-family: "Canopee";
+  margin: 0 auto;
+  width: 80%;
+  text-align: start;
+}
+.profile p {
+  margin: 0 auto;
+  font-size: 6vw;
+  padding: 0.2em;
+  font-family: "Canopee";
+  text-align: start;
+  margin-bottom: 1em;
+}
+.h {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 10vw;
+}
+.btn_container {
+  position: relative;
+  background-color: #fff;
+  padding: 0.3em;
+  display: inline-block;
+  border-radius: 50px;
+  width: 11.71303074670571vw;
+  height: 3.074670571010249vw;
+}
+
+.btn.abt_me::after,
+.btn.abt_me::before {
+  cursor: pointer;
+  /* outline: 1px solid blue; */
+  top: 0.3vw;
+  left: 2px;
+  font-family: "Canopee";
+  content: "About me";
+  color: black;
+  font-size: 3vw;
+  position: absolute;
+  text-align: center;
+  transition: all 400ms;
+  width: 100%;
+}
+.btn.abt_me:hover::after {
+  top: -36px;
+  color: transparent;
+}
+.btn.abt_me:hover::before {
+  content: url("../assets/61001a3509319b6ae39e156b_arrow-long.svg");
+  top: 36px;
+}
+.btn.abt_me:hover::before {
+  top: 0;
+}
