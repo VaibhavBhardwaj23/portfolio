@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Canopee:wght@400&display=swap");
+@font-face {
+  font-family: "Canopee";
+  src: local("Canopee"),
+    url("./fonts/Canopee/Canopee_Regular.otf") format("truetype");
+  /* font-weight:; */
+}
 * {
   margin: 0;
   padding: 0;
