@@ -5,14 +5,29 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 function App() {
   const main = useRef();
-
+  const app = useRef();
   useEffect(() => {
-    gsap.to(main.current, {
-      duration: 2,
-      rotation: -1080, // Rotate 360 degrees
-      scale: 1,
-      margin: 0,
-    });
+    var loadTimeline = gsap.timeline();
+    loadTimeline
+      .from(main.current, {
+        scale: 0.7,
+      })
+      .to(app.current, {
+        overflow: "hidden",
+        height: "100vh",
+      })
+      .to(main.current, {
+        duration: 2,
+        scale: 0.9,
+      })
+      .to(main.current, {
+        scale: 1,
+        rotate: -360,
+      })
+      .to(app.current, {
+        overflow: "scroll-Y",
+        height: "100%",
+      });
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
@@ -21,7 +36,7 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="App">
+            <div ref={app} className="App">
               <main ref={main} className="main">
                 <div className="heading">
                   <p className="line_1">The Portfolio</p>

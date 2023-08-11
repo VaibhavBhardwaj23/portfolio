@@ -28,7 +28,7 @@ const Knowlege = () => {
         <div className="skills_descript">
           <h3>Things I'm Learning</h3>
           <p>•Python</p>
-          <p>•GSOC</p>
+          <p>•GSAP</p>
           <p>•NEXT.js</p>
           <p>•FireBase</p>
         </div>

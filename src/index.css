@@ -27,3 +27,18 @@
 .line_1 {
   font-size: 20px;
 }
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background-color: #1d1d1b;
+  border: 0.25em solid #cdc6be;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cdc6be;
+  border-radius: 100vw;
+  height: 0.2em;
+  border: 0.25em solid #1d1d1b;
+}
