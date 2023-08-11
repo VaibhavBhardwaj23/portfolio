@@ -45,3 +45,9 @@
   height: 0.2em;
   border: 0.25em solid #1d1d1b;
 }
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #1d1d1b #c5bdb3;
+  }
+}
