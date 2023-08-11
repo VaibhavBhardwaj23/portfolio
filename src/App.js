@@ -9,13 +9,6 @@ function App() {
   useEffect(() => {
     var loadTimeline = gsap.timeline();
     loadTimeline
-      .from(main.current, {
-        scale: 0.7,
-      })
-      .to(app.current, {
-        overflow: "hidden",
-        height: "100vh",
-      })
       .to(main.current, {
         duration: 2,
         scale: 0.9,

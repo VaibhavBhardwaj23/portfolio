@@ -11,10 +11,13 @@
 }
 .App {
   background-color: rgba(20, 19, 19, 1);
+  overflow: hidden;
+  height: 100vh;
 }
 .main {
-  background-color: #cdc6be;
+  background-color: #c5bdb3;
   height: max-content;
+  scale: 0.7;
 }
 .heading p {
   text-align: center;
@@ -34,10 +37,10 @@
 }
 ::-webkit-scrollbar-track {
   background-color: #1d1d1b;
-  border: 0.25em solid #cdc6be;
+  border: 0.25em solid #c5bdb3;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #cdc6be;
+  background-color: #c5bdb3;
   border-radius: 100vw;
   height: 0.2em;
   border: 0.25em solid #1d1d1b;
