@@ -21,7 +21,7 @@ const HomePage = () => {
               alt="computer guy"
             ></img>
           </div>
-          <p>The picture above depicts me more than my actual photo</p>
+          <p>The picture depicts me more than my actual photo</p>
         </div>
         <div className="profile">
           <div className="profile_image">
@@ -32,14 +32,14 @@ const HomePage = () => {
             Developer based in new DElhi, India
           </p>
           <div className="btn_container">
-            <Link to={"/about"} className="btn abt_me" />
+            <Link to={"/about"} className="btn abt_me" >About Me</Link>
           </div>
         </div>
       </div>
       <Projects />
       <Knowlege />
       <h3 className="foot">Let's connect and create something beautiful </h3>
-      <hr></hr>
+      
       <Footer />
     </div>
   );

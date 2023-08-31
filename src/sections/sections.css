@@ -13,8 +13,20 @@
   height: 20vw;
 }
 .skills_descript h3 {
-  font-size: 1.6vw;
+  font-size: 3.6vw;
 }
 .skills_descript p {
-  font-size: 3vw;
+  font-size: 6vw;
+}
+@media screen and (min-width:768px) {
+
+
+  
+  
+  .skills_descript h3 {
+    font-size: 1.6vw;
+  }
+  .skills_descript p {
+    font-size: 3vw;
+  }
 }

@@ -35,7 +35,7 @@ const About = () => {
       </div>
       <Header title="Academics" src={academics} />
       <div>
-        {Education && Education.map((project) => <List project={project} />)}
+        {Education && Education.map((project) => <List key={project.title} project={project} />)}
         <hr />
         <ProgressCard
           title="26+ 
@@ -54,7 +54,7 @@ Fun Projects"
           src={projects}
         />
       </div>
-      <hr />
+      
       <Footer />
     </div>
   );

@@ -6,6 +6,7 @@ import About from "./pages/About";
 function App() {
   const main = useRef();
   const app = useRef();
+  console.log("Load Again")
   useEffect(() => {
     var loadTimeline = gsap.timeline();
     loadTimeline
@@ -25,24 +26,26 @@ function App() {
   }, []);
   return (
     <Router>
+            <div ref={app} className="App">
+              <main ref={main} className="main">
       <Routes>
         <Route
           path="/"
           element={
-            <div ref={app} className="App">
-              <main ref={main} className="main">
-                <div className="heading">
+                <>
+                  <div className="heading">
                   <p className="line_1">The Portfolio</p>
                   <p>featuring</p>
                 </div>
 
                 <HomePage />
-              </main>
-            </div>
+                </>
           }
         />
         <Route path="/about" element={<About />} />
       </Routes>
+              </main>
+            </div>
     </Router>
   );
 }
